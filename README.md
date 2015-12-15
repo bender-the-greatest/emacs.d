@@ -1,6 +1,8 @@
 MetalSearGolid's Emacs Configuration
 ====================================
 
+![Screenshot of Dev Layout](https://cloud.githubusercontent.com/assets/1764885/11813115/7a96ad04-a30d-11e5-93bf-7a263cecfde0.png)
+
 I made this for myself but decided to share the configuration for anyone who may want it. At some point I will probably put a cheat sheet up here if I ever get around to making one.
 
 Required Plugins
