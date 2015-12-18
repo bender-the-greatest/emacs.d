@@ -6,7 +6,8 @@
 (load-user-file "dockerfile-mode.el") ; dockerfile-mode
 (load-user-file "projectile.el") ; projects for emacs 
 (load-user-file "jedi.el") ; python code completion
-(load-user-file "python-mode.el") ; advanced python development features
+(load-user-file "flycheck.el"); enable flycheck
+(load-user-file "python-mode.el") ; python development features
 (load-user-file "salt-states.el") ; salt-states (TODO: Make this do jinja too)
 (load-user-file "ibuffer.el") ; enable ibuffers
 (load-user-file "windmove.el") ; some windmove defaults

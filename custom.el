@@ -1,5 +1,8 @@
 ;; Customizations that don't really merit their own file
 
+;; Set column-number-mode by default
+(setq column-number-mode t)
+
 ;; allow 'y' or 'n' in place of 'yes' or 'no' in prompts
 (defalias 'yes-or-no-p 'y-or-n-p)
 
