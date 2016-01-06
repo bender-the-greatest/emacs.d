@@ -10,6 +10,10 @@
 (global-set-key (kbd "C-\"") 'split-window-vertically)
 (global-set-key (kbd "C-'") 'split-window-horizontally)
 
+;; alternative window splitting shortcuts (the above shortcuts don't seem to work in -nw mode)
+(global-set-key (kbd "M-\\") 'split-window-horizontally)
+(global-set-key (kbd "C-\\") 'split-window-vertically)
+
 ;; window navigation
 (global-set-key (kbd "C-x <up>") 'windmove-up)
 (global-set-key (kbd "C-x <down>") 'windmove-down)
@@ -29,13 +33,18 @@
   (other-window -1))
 (global-set-key (kbd "C-x g") 'generate-dev-layout)
 
+;; Set theme
+(load-theme 'sanityinc-solarized-dark)
+
 ;; windmove hooks are defined in windmove-hooks.el
 ;; these will activate themes based on which buffer is active
-(defun msg/window-focus-enter()
-  (load-theme-buffer-local 'deeper-blue (current-buffer)))
+;; I disabled the following buffer change functions because it's hokey
+;; and flashes the window when changing using the GUI app
 
-(defun msg/window-focus-leave()
-  (load-theme-buffer-local 'sanityinc-solarized-dark (current-buffer)))
+;;(defun msg/window-focus-enter()
+;;  (load-theme-buffer-local 'deeper-blue (current-buffer)))
+;;(defun msg/window-focus-leave()
+;;  (load-theme-buffer-local 'sanityinc-solarized-dark (current-buffer)))
 
-(add-hook 'windmove-post-move-hook 'msg/window-focus-enter)
-(add-hook 'windmove-pre-move-hook 'msg/window-focus-leave)
+;;(add-hook 'windmove-post-move-hook 'msg/window-focus-enter)
+;;(add-hook 'windmove-pre-move-hook 'msg/window-focus-leave)
