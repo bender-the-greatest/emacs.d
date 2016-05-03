@@ -15,5 +15,6 @@
 ;(load-user-file "hexrgb.el") ; eyedropper dependency. this should not need to be loaded here
 (load-user-file "eyedropper.el") ; useful for getting buffer color information
 ;(load-user-file "workgroups2.el") ; disabled for preference, but can be safely enabled
+(load-user-file "simple-clip.el") ; Use simpleclip when in terminal mode for clipboard access
 
 (load-user-file "custom.el") ; other stuff
